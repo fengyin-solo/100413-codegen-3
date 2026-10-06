@@ -18,6 +18,10 @@ export type ModuleMeta = {
   actions: string[]
   actionTargets: Record<string, string>
   metrics: string[]
+  // 线性流转模块：状态只能沿 statuses 往下一格推进，越格或倒走都不予受理。
+  linearFlow?: boolean
+  // 哪些状态还算待处理；不声明时默认「除最后一个状态外都算待处理」。
+  pendingStatuses?: string[]
 }
 
 export type PageResult = {

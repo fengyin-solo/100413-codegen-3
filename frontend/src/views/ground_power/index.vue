@@ -82,7 +82,7 @@ import {
 import type { EntryRow } from '@/data/types'
 
 const meta = moduleMeta('ground_power')
-const columns = ["设备编号", "设备类型", "所属机位", "输出电压", "额定电流", "供电开始", "供电结束", "设备状态"]
+const columns = ["设备编号", "设备类型", "所属机位", "输出电压", "额定电流", "供电开始", "供电结束", "占用廊桥", "设备状态"]
 const actions = ["开始供电", "结束供电", "停用报修"]
 const statuses = ["待机", "供电中", "已断电", "故障停用"]
 const stats = [{"label": "供电中设备", "value": 0}, {"label": "待机设备", "value": 0}, {"label": "故障设备", "value": 0}]
