@@ -18,6 +18,8 @@ export type ModuleMeta = {
   actions: string[]
   actionTargets: Record<string, string>
   metrics: string[]
+  // 状态机是否只能按 statuses 顺序逐格前进：开启后越过环节或倒走一律不予受理。
+  strictStep?: boolean
 }
 
 export type PageResult = {
